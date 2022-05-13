@@ -10,20 +10,43 @@
 </head>
 <body>
    
-    <h1 id="cabeza" class="text-center">Array</h1>
-    <h2>Definición: </h2>
-    <p>Un array es una estructura que utilizamos para almacenar objetos de un mismo tipo en un grupo.</p>
-    <p>Pueden ser dinámicos o estáticos</p>
-    <p><span>Dinamica:</span> Son arrays que no tienen un tamaño definido y podemos declarar su tamaño al incializar el objeto.</p>
-    <p>Se definen de la siguiente manera: </p>
-    <p>Object[] nombreobjeto = new Object[10]</p>
+    <h1 id="cabeza" class="text-center">Array y ArrayLists</h1>
+    <h2>- Array </h2>
+    <p class="offset-1">&#8226; Un array es una estructura que utilizamos para almacenar objetos de un mismo tipo en un grupo usando posiciones de memoria contiguas.</p>
+    <p class="offset-1">&#8226; Esto permite que se pueda acceder a la informacion de forma rapida y eficaz.</p>
+
+    <img class="offset-4 text-center" src="./Imagenes/Array1.PNG">
+    <p class="offset-1">&#8226;Su declaración e inicialización es la siguiente:</p>
+    <p class="offset-2" id="negrita">- Object nombre_array[]</p>   
+    <p class="offset-2" id="negrita">- nombre_array= new Object[tamaño]</p>
+ 
+
+    <p class="offset-1">&#8226;Para asignarle valores, tan solo tenemos que recorrer el array e ir asignando a cada posicion un valor</p>
+    <p class="offset-2" id="negrita">- for(int i=0;i < tamaño;i++){</p>
+    <p class="offset-3" id="negrita"> nombre_array[i]=valor</p>
+    <p class="offset-2">}</p>
 
 
-    <p><span>Estatica:</span>  Se crean con el valor ya inicializado directamente</p>
-    <p>Se definen de la siguiente manera:</p>d
-    <p>Object nombreobjeto[10]</p>
+    <h2>ArrayList: </h2>
+    <p class="offset-1">&#8226;Un ArrayList es una clase de java que permite definir arrays dinámicos, es decir, que pueden modificar su tamaño en base a los elementos que se le vayan introduciendo o quitando</p>
+    <img class="offset-4 text-center" src="./Imagenes/ArrayList.PNG">
+    <p class="offset-1">&#8226;Su declaracion es la siguiente:</p>
+    <p class="offset-2" id="negrita">- ArrayList &#60Object&#62 lista=new ArrayList &#60Object&#62()</p>
+    <p class="offset-1">&#8226;Para insertar valores: </p>
+    <p class="offset-2" id="negrita">- lista.add(valor)</p>
+    <p class="offset-2">A medida que vamos insertando valores, el tamaño del array aumenta</p>
+    <p class="offset-1">&#8226;Para acceder a valores dada una posicion i: </p>
+    <p class="offset-2" id="negrita">- lista.get(i)</p>
+    <p class="offset-1">&#8226;Para cambiar el valor de la posicion i: </p>
+    <p class="offset-2" id="negrita">- lista.set(i,valor2)</p>
+    <p class="offset-1">&#8226;Para quitar el elemento de la posicion i: </p>
+    <p class="offset-2" id="negrita">- lista.remove(i)</p>
+    <p class="offset-2">A medida que vamos removiendo valores, el tamaño del array disminuye</p>
+    <p class="offset-1">&#8226;Para quitar todos los elementos del arraylist: </p>
+    <p class="offset-2" id="negrita">- lista.clear()</p>
+    <p class="offset-1">&#8226;Obtener el tamaño actual del arraylist: </p>
+    <p class="offset-2" id="negrita">- lista.size()</p>
 
-    <img src="Imagenes/Array.PNG">
-
+    <footer class="col-12"></footer>
 </body>
 </html>

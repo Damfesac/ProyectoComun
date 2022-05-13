@@ -1,10 +1,32 @@
 #cabeza{
     background-color: green;
+    height: 100px;
+    font-size: 75px;
+    color: white;
+    margin-bottom: 75px;
+    font-weight: bold;
 
+}
+h2{
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+#negrita{
+    font-weight: bold;
+}
+
+h2{
+    font-size: 50px;
 }
 
 p{
-    font-size: 50px;
+    font-size: 35px;
     font-style: bold;
-    
+
+}
+
+footer{
+    background-color: gray;
+    height: 75px;
 }
